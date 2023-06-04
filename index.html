@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ayush Portfolio</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background-color: #003049;
+				color: white;
+				font-family: "Poppins", sans-serif;
+			}
+
+			nav {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				height: 90px;
+				background-color: hsl(208, 76%, 7%);
+			}
+
+			nav ul {
+				display: flex;
+				justify-content: space-around;
+				color: white;
+			}
+
+			nav ul li {
+				list-style: none;
+				margin: 30px;
+			}
+			nav ul li a {
+				text-decoration: none;
+				color: white;
+			}
+			nav ul li a:hover {
+				color: cyan;
+				font-size: 1.1rem;
+			}
+			.left {
+				font-size: 1.5rem;
+			}
+			.left a {
+				text-decoration: none;
+				color: white;
+			}
+			.left a:hover {
+			}
+			.firstsection {
+				display: flex;
+				justify-content: space-around;
+				margin: 23px;
+			}
+			.firstsection div {
+				width: 35%;
+				height: 490px;
+			}
+			.firstleft {
+				font-size: 3rem;
+				line-height: 70px;
+				word-spacing: 7px;
+			}
+			.firstright img {
+				color: black;
+				height: 80%;
+				width: 90%;
+				margin: 50px 0;
+			}
+			name {
+				color: rgb(170, 110, 230);
+			}
+			.changing {
+				color: rgb(170, 110, 230);
+			}
+			.aftername {
+				justify-content: center;
+				align-content: center;
+				color: white;
+			}
+			.c {
+				font-size: 1.5rem;
+			}
+			.res {
+				border-color: black;
+				background-color: lightslategrey;
+				padding: 12px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div class="left">
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<a href="http://127.0.0.1:5500/index.html">Ayush's Portfolio</a>
+				</div>
+				<div class="right">
+					<ul>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<li><a href="">Home </a></li>
+						<li><a href="http://127.0.0.1:5500/about.html">About </a></li>
+						<li><a href="http://127.0.0.1:5500/project.html">Project </a></li>
+						<li>
+							<a href="http://127.0.0.1:5500/contact_me.html">Contact Me </a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section class="firstsection">
+				<div class="firstleft">
+					<br />
+					Hi, My Name is <name>Ayush</name> and I am a<br />
+					Passionate <br />
+
+					<span id="element" class="changing"></span>
+				</div>
+
+				<div class="firstright"><br /><img src="png.png" /></div>
+			</section>
+		</main>
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+		<!-- Setup and start animation! -->
+		<script>
+			var typed = new Typed("#element", {
+				strings: [" Web Developer.", "Graphic Designer. ", "Data Scientist."],
+				typeSpeed: 75,
+			});
+		</script>
+
+		<form method="get" action="Ayush resume pdf.pdf" target="new">
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button
+				class="res"
+			>
+				<b>Download Resume</b>
+			</button>
+		</form>
+
+		<br /><br /><br />
+
+		<hr color="cyan" width="60%" style="margin: auto" />
+		<br /><br />
+
+		<p class="aftername">
+			<b><center class="c">Experience</center></b>
+		</p>
+	</body>
+</html>
